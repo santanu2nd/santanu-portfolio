@@ -1,9 +1,13 @@
+/* Base fonts for the site */
 body {
   font-family: 'Roboto', Arial, sans-serif;
   background: linear-gradient(135deg,#343d50 0%, #e3eefe 100%);
   color: #222940;
   margin: 0;
   min-height: 100vh;
+}
+h1, h2, h3, strong, nav a, .skills-tags li, .resume-link a, .certificate-link a, .project-link-btn a {
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -32,7 +36,6 @@ header {
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 2.4rem;
   margin-bottom: 0.18rem;
@@ -41,7 +44,6 @@ h1 {
 
 .subtitle {
   font-size: 1.19rem;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #ffcc00;
   margin-bottom: 0.8rem;
@@ -65,6 +67,7 @@ h1 {
   text-decoration: underline;
 }
 
+/* Button fonts and look */
 .resume-link {
   margin-top: 1.2em;
 }
@@ -72,7 +75,6 @@ h1 {
   display: inline-block;
   background: #ffcc00;
   color: #34495e;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   padding: 0.6em 1.2em;
   border-radius: 8px;
@@ -104,7 +106,6 @@ nav ul {
   margin: 0;
 }
 nav li a {
-  font-family: 'Montserrat', sans-serif;
   color: #34495e;
   text-decoration: none;
   font-size: 1rem;
@@ -130,7 +131,7 @@ nav li a:hover::after, nav li a:focus::after {
   width: 100%;
 }
 
-/* Card style for sections */
+/* Cards, headings, tags */
 .card.glass {
   background: rgba(255,255,255,0.88);
   box-shadow: 0 7px 32px rgba(87,111,183,0.08), 0 1.5px 8px rgba(52,73,94,0.04);
@@ -140,19 +141,18 @@ nav li a:hover::after, nav li a:focus::after {
   max-width: 850px;
   transition: box-shadow 0.27s;
 }
-
 .card.glass:hover {
   box-shadow: 0 14px 36px rgba(87,111,183,0.18), 0 4px 20px rgba(87,111,183,0.09);
 }
 
 section h2 {
-  font-family: 'Montserrat', sans-serif;
   color: #34495e;
   padding-left: 9px;
   border-left: 6px solid #ffcc00;
   margin-bottom: 1.6rem;
   font-size: 1.42rem;
   letter-spacing: 0.2px;
+  font-weight: 700;
 }
 
 .skills-tags {
@@ -164,7 +164,6 @@ section h2 {
   list-style: none;
 }
 .skills-tags li {
-  font-family: 'Montserrat', sans-serif;
   background: #e3eefe;
   color: #34495e;
   padding: 0.44em 1.05em;
@@ -174,6 +173,7 @@ section h2 {
   margin-bottom: 0.15em;
   transition: background 0.2s, color 0.2s;
   cursor: default;
+  font-weight: 500;
 }
 .skills-tags li:hover {
   background: #ffecb3;
@@ -190,36 +190,35 @@ section h2 {
   border-left: 6px solid #3b82f6;
   border-right: 6px solid #ffcc00;
 }
-
 .project-card.highlight {
   border-left: 7px solid #10b981;
   border-right: 7px solid #ff9500;
   background: linear-gradient(70deg,#f9fbe7 70%,#eefcff 100%);
 }
-
-.project-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1rem;
+.project-card h3 {
+  font-size: 1.18em;
+  font-weight: 700;
 }
-.github-link {
+.project-link-btn {
+  margin: 0.3em 0 1em 0;
+}
+.project-link-btn a {
   display: inline-block;
-  background: #222940;
-  color: #ffe066;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  padding: 0.4em 1em;
-  border-radius: 7px;
-  text-decoration: none;
-  font-size: 0.98em;
-  transition: background 0.17s, color 0.17s, box-shadow 0.16s;
-  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
-}
-.github-link:hover {
-  background: #21234f;
+  background: #0d947a;
   color: #fff;
-  box-shadow: 0 4px 19px #10b98133;
+  font-weight: 700;
+  padding: 0.62em 1.18em;
+  border-radius: 9px;
+  text-decoration: none;
+  box-shadow: 0 2px 7px rgba(44,62,80,0.08);
+  transition: background 0.21s, color 0.14s, transform 0.13s;
+  font-size: 1em;
+  letter-spacing: 0.2px;
+}
+.project-link-btn a:hover {
+  background: #0b735e;
+  color: #ffe066;
+  transform: translateY(-2px) scale(1.04);
 }
 
 .project-points {
@@ -232,10 +231,13 @@ section h2 {
   margin-bottom: 0.60rem;
   font-size: 1.09em;
   line-height: 1.55;
+  font-family: 'Roboto', Arial, sans-serif;
 }
+
 
 strong {
   color: #34495e;
+  font-weight: 700;
 }
 
 .progress-list > div {
@@ -253,7 +255,6 @@ strong {
   height: 100%;
   background: linear-gradient(90deg, #ffcc00 75%, #ffe066 100%);
   border-radius: 10px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   color: #2c3e50;
   text-align: right;
@@ -261,6 +262,7 @@ strong {
   line-height: 22px;
   font-weight: 700;
   box-shadow: 0 1px 3px rgba(52,73,94,0.10);
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Certificate button */
@@ -271,7 +273,6 @@ strong {
   display: inline-block;
   background: #0d947a;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   padding: 0.62em 1.18em;
   border-radius: 9px;
@@ -279,6 +280,7 @@ strong {
   box-shadow: 0 2px 7px rgba(44,62,80,0.06);
   transition: background 0.21s, color 0.16s, transform 0.13s;
   font-size: 1em;
+  letter-spacing: 0.2px;
 }
 .certificate-link a:hover {
   background: #0b735e;
@@ -295,8 +297,10 @@ footer {
   font-size: 1em;
   margin-top: 2.2rem;
   letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
 }
 
+/* Responsive */
 @media (max-width: 900px) {
   .card { padding: 1.2rem 0.5rem; }
   .progress-bar { max-width: 95%; }
@@ -311,5 +315,5 @@ footer {
   .skills-tags li { font-size: 0.92em; }
   .card.glass { padding: 1.1rem 0.2rem 1rem 0.2rem; }
   .project-card { padding: 0.81rem 0.38rem; }
-  .resume-link a, .certificate-link a { font-size: 0.91em; }
+  .resume-link a, .certificate-link a, .project-link-btn a { font-size: 0.91em; }
 }
