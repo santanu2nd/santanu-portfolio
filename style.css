@@ -1,12 +1,12 @@
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  background: linear-gradient(135deg,#343d50 0%, #e3eefe 100%);
+  background: linear-gradient(135deg, #343d50 0%, #e3eefe 100%);
   color: #222940;
   margin: 0;
   min-height: 100vh;
 }
 
-h1, h2, h3, strong, nav a, .skills-tags li, .resume-link a, .certificate-link a, .project-link-btn a {
+h1, h2, h3, strong, nav a, .skills-tags li, .resume-link a, .certificate-link a, .project-link-btn a, .github-profile-link a {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -15,7 +15,7 @@ header {
   color: #fff;
   padding: 2.2rem 0 2rem 0;
   border-bottom: 5px solid #ffcc00;
-  box-shadow: 0 8px 32px 0 rgba(44,62,80,0.18);
+  box-shadow: 0 8px 32px 0 rgba(44, 62, 80, 0.18);
 }
 
 .header-flex {
@@ -30,7 +30,7 @@ header {
   height: 130px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 6px 32px rgba(44,62,80,0.14);
+  box-shadow: 0 6px 32px rgba(44, 62, 80, 0.14);
   border: 3.5px solid #ffcc00;
   background: #fff;
 }
@@ -78,7 +78,7 @@ h1 {
   padding: 0.6em 1.2em;
   border-radius: 8px;
   text-decoration: none;
-  box-shadow: 0 3px 9px rgba(44,62,80,0.07);
+  box-shadow: 0 3px 9px rgba(44, 62, 80, 0.07);
   transition: background 0.19s, color 0.19s, transform 0.18s;
 }
 .resume-link a:hover {
@@ -87,10 +87,33 @@ h1 {
   transform: translateY(-2px) scale(1.04);
 }
 
+/* New GitHub Profile Button */
+.github-profile-link {
+  margin-top: 1em;
+}
+.github-profile-link a {
+  display: inline-block;
+  background: #222940;
+  color: #ffe066;
+  font-weight: 700;
+  padding: 0.62em 1.18em;
+  border-radius: 9px;
+  text-decoration: none;
+  box-shadow: 0 3px 9px rgba(44, 62, 80, 0.12);
+  transition: background 0.21s, color 0.16s, transform 0.15s;
+  font-size: 1em;
+  letter-spacing: 0.2px;
+}
+.github-profile-link a:hover {
+  background: #34495e;
+  color: #fff;
+  transform: translateY(-2px) scale(1.05);
+}
+
 /* Navigation */
 nav {
-  background: rgba(255,255,255,0.98);
-  box-shadow: 0 2px 10px rgba(44,62,80,0.09);
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 10px rgba(44, 62, 80, 0.09);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -123,17 +146,19 @@ nav li a::after {
   position: absolute;
   bottom: -5px; left: 0;
 }
-nav li a:hover, nav li a:focus {
+nav li a:hover,
+nav li a:focus {
   color: #ffcc00;
 }
-nav li a:hover::after, nav li a:focus::after {
+nav li a:hover::after,
+nav li a:focus::after {
   width: 100%;
 }
 
 /* Cards, headings, tags */
 .card.glass {
-  background: rgba(255,255,255,0.88);
-  box-shadow: 0 7px 32px rgba(87,111,183,0.08), 0 1.5px 8px rgba(52,73,94,0.04);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 7px 32px rgba(87, 111, 183, 0.08), 0 1.5px 8px rgba(52, 73, 94, 0.04);
   border-radius: 20px;
   margin: 2.2rem auto;
   padding: 2.3rem 2.2rem 1.7rem 2.2rem;
@@ -141,7 +166,7 @@ nav li a:hover::after, nav li a:focus::after {
   transition: box-shadow 0.27s;
 }
 .card.glass:hover {
-  box-shadow: 0 14px 36px rgba(87,111,183,0.18), 0 4px 20px rgba(87,111,183,0.09);
+  box-shadow: 0 14px 36px rgba(87, 111, 183, 0.18), 0 4px 20px rgba(87, 111, 183, 0.09);
 }
 
 section h2 {
@@ -167,7 +192,7 @@ section h2 {
   color: #34495e;
   padding: 0.44em 1.05em;
   border-radius: 14px;
-  box-shadow: 0 1px 4px rgba(52,73,94,0.10);
+  box-shadow: 0 1px 4px rgba(52, 73, 94, 0.10);
   font-size: 1em;
   margin-bottom: 0.15em;
   transition: background 0.2s, color 0.2s;
@@ -182,8 +207,8 @@ section h2 {
 .project-card {
   padding: 1.3rem 1.1rem 1.2rem 1.1rem;
   border-radius: 14px;
-  background: linear-gradient(78deg,#e6eeff 65%,#f7fafd 100%);
-  box-shadow: 0 5.5px 18px rgba(52,73,94,0.10);
+  background: linear-gradient(78deg, #e6eeff 65%, #f7fafd 100%);
+  box-shadow: 0 5.5px 18px rgba(52, 73, 94, 0.10);
   margin-bottom: 0.9rem;
   transition: box-shadow 0.22s, background 0.17s;
   border-left: 6px solid #3b82f6;
@@ -192,7 +217,7 @@ section h2 {
 .project-card.highlight {
   border-left: 7px solid #10b981;
   border-right: 7px solid #ff9500;
-  background: linear-gradient(70deg,#f9fbe7 70%,#eefcff 100%);
+  background: linear-gradient(70deg, #f9fbe7 70%, #eefcff 100%);
 }
 .project-card h3 {
   font-size: 1.18em;
@@ -209,7 +234,7 @@ section h2 {
   padding: 0.62em 1.18em;
   border-radius: 9px;
   text-decoration: none;
-  box-shadow: 0 2px 7px rgba(44,62,80,0.08);
+  box-shadow: 0 2px 7px rgba(44, 62, 80, 0.08);
   transition: background 0.21s, color 0.14s, transform 0.13s;
   font-size: 1em;
   letter-spacing: 0.2px;
@@ -233,7 +258,6 @@ section h2 {
   font-family: 'Roboto', Arial, sans-serif;
 }
 
-
 strong {
   color: #34495e;
   font-weight: 700;
@@ -247,7 +271,7 @@ strong {
   border-radius: 10px;
   height: 22px;
   margin-top: 0.3em;
-  box-shadow: 0 1px 5px rgba(52,73,94,0.09);
+  box-shadow: 0 1px 5px rgba(52, 73, 94, 0.09);
   max-width: 80%;
 }
 .progress-bar div {
@@ -260,7 +284,7 @@ strong {
   padding-right: 12px;
   line-height: 22px;
   font-weight: 700;
-  box-shadow: 0 1px 3px rgba(52,73,94,0.10);
+  box-shadow: 0 1px 3px rgba(52, 73, 94, 0.10);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -276,7 +300,7 @@ strong {
   padding: 0.62em 1.18em;
   border-radius: 9px;
   text-decoration: none;
-  box-shadow: 0 2px 7px rgba(44,62,80,0.06);
+  box-shadow: 0 2px 7px rgba(44, 62, 80, 0.06);
   transition: background 0.21s, color 0.16s, transform 0.13s;
   font-size: 1em;
   letter-spacing: 0.2px;
@@ -301,19 +325,45 @@ footer {
 
 /* Responsive */
 @media (max-width: 900px) {
-  .card { padding: 1.2rem 0.5rem; }
-  .progress-bar { max-width: 95%; }
-  header .header-flex { flex-direction: column; gap: 1rem; }
+  .card {
+    padding: 1.2rem 0.5rem;
+  }
+  .progress-bar {
+    max-width: 95%;
+  }
+  header .header-flex {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 600px) {
-  nav ul { gap: 1rem; flex-wrap: wrap; }
-  h1 { font-size: 1.6rem; }
-  .subtitle { font-size: 1rem; }
-  section h2 { font-size: 1.12rem; }
-  .skills-tags li { font-size: 0.92em; }
-  .card.glass { padding: 1.1rem 0.2rem 1rem 0.2rem; }
-  .project-card { padding: 0.81rem 0.38rem; }
-  .resume-link a, .certificate-link a, .project-link-btn a { font-size: 0.91em; }
+  nav ul {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  section h2 {
+    font-size: 1.12rem;
+  }
+  .skills-tags li {
+    font-size: 0.92em;
+  }
+  .card.glass {
+    padding: 1.1rem 0.2rem 1rem 0.2rem;
+  }
+  .project-card {
+    padding: 0.81rem 0.38rem;
+  }
+  .resume-link a,
+  .certificate-link a,
+  .project-link-btn a,
+  .github-profile-link a {
+    font-size: 0.91em;
+  }
 }
-
