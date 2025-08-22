@@ -1,369 +1,339 @@
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  background: linear-gradient(135deg, #343d50 0%, #e3eefe 100%);
+  background: linear-gradient(125deg, #e0edfa 0%, #fff 100%);
   color: #222940;
   margin: 0;
   min-height: 100vh;
 }
 
-h1, h2, h3, strong, nav a, .skills-tags li, .resume-link a, .certificate-link a, .project-link-btn a, .github-profile-link a {
+h1, h2, h3, strong, nav a, .skill-tags span, .btn, .cert-block .title {
   font-family: 'Montserrat', sans-serif;
 }
 
 header {
-  background: linear-gradient(90deg, #34495e 70%, #222940 100%);
+  background: linear-gradient(90deg, #34495e 80%, #71b7f6 100%);
   color: #fff;
-  padding: 2.2rem 0 2rem 0;
+  padding: 2.5rem 0 2rem 0;
   border-bottom: 5px solid #ffcc00;
-  box-shadow: 0 8px 32px 0 rgba(44, 62, 80, 0.18);
+  box-shadow: 0 8px 32px rgba(44,62,80,0.15);
 }
 
 .header-flex {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.2rem;
 }
 
 .profile-img {
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 6px 32px rgba(44, 62, 80, 0.14);
+  box-shadow: 0 8px 30px rgba(44,62,80,0.16);
   border: 3.5px solid #ffcc00;
   background: #fff;
 }
 
 h1 {
   font-weight: 700;
-  font-size: 2.4rem;
-  margin-bottom: 0.18rem;
+  font-size: 2.45rem;
+  margin-bottom: 0.2rem;
   letter-spacing: 1px;
 }
 
 .subtitle {
-  font-size: 1.19rem;
-  font-weight: 500;
+  font-size: 1.12rem;
+  font-weight: 600;
   color: #ffcc00;
-  margin-bottom: 0.8rem;
-  letter-spacing: 0.4px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.3px;
 }
 
 .contact {
-  margin-bottom: 7px;
+  font-size: 1rem;
+  margin-bottom: 9px;
+}
+.contact span {
+  margin-right: 4px;
 }
 .contact a {
   color: #ffcc00;
-  margin-right: 1.1rem;
+  margin-right: 1.2rem;
   text-decoration: none;
-  font-size: 1rem;
   font-weight: 500;
-  line-height: 1.7;
-  transition: color 0.3s;
+  transition: color 0.23s;
 }
 .contact a:hover {
   color: #fff;
   text-decoration: underline;
 }
 
-.resume-link {
+.btn-row {
   margin-top: 1.2em;
+  display: flex;
+  gap: 1.1em;
 }
-.resume-link a {
+
+.btn {
   display: inline-block;
   background: #ffcc00;
   color: #34495e;
-  font-weight: 600;
-  padding: 0.6em 1.2em;
+  font-weight: 700;
+  font-size: 1.01em;
+  padding: 0.58em 1.16em;
   border-radius: 8px;
+  box-shadow: 0 3px 9px rgba(44,62,80,0.09);
   text-decoration: none;
-  box-shadow: 0 3px 9px rgba(44, 62, 80, 0.07);
-  transition: background 0.19s, color 0.19s, transform 0.18s;
+  transition: background 0.19s, color 0.17s, transform 0.17s;
+  letter-spacing: 0.1px;
 }
-.resume-link a:hover {
+.btn:hover {
   background: #ffe066;
   color: #2c3e50;
   transform: translateY(-2px) scale(1.04);
 }
-
-/* New GitHub Profile Button */
-.github-profile-link {
-  margin-top: 1em;
-}
-.github-profile-link a {
-  display: inline-block;
-  background: #222940;
-  color: #ffe066;
-  font-weight: 700;
-  padding: 0.62em 1.18em;
-  border-radius: 9px;
-  text-decoration: none;
-  box-shadow: 0 3px 9px rgba(44, 62, 80, 0.12);
-  transition: background 0.21s, color 0.16s, transform 0.15s;
-  font-size: 1em;
-  letter-spacing: 0.2px;
-}
-.github-profile-link a:hover {
+.btn.github {
   background: #34495e;
+  color: #ffcc00;
+}
+.btn.github:hover {
+  background: #0b735e;
+  color: #ffecb3;
+}
+.btn.special {
+  background: #0d947a;
   color: #fff;
-  transform: translateY(-2px) scale(1.05);
+}
+.btn.special:hover {
+  background: #2d7b6e;
+  color: #ffe066;
 }
 
-/* Navigation */
 nav {
-  background: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 2px 10px rgba(44, 62, 80, 0.09);
+  background: rgba(255,255,255,0.98);
+  box-shadow: 0 1px 9px rgba(44,62,80,0.07);
   position: sticky;
   top: 0;
   z-index: 100;
 }
-
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 2.2rem;
-  padding: 1rem 0;
+  padding: 1.08rem 0;
   margin: 0;
 }
 nav li a {
   color: #34495e;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.06rem;
   font-weight: 600;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.2px;
   position: relative;
   transition: color 0.23s;
 }
 nav li a::after {
   content: '';
   display: block;
-  height: 2.5px;
+  height: 2px;
   width: 0;
   background: #ffcc00;
   transition: width 0.27s;
   position: absolute;
-  bottom: -5px; left: 0;
+  bottom: -7px; left: 0;
 }
-nav li a:hover,
-nav li a:focus {
+nav li a:hover, nav li a:focus {
   color: #ffcc00;
 }
-nav li a:hover::after,
-nav li a:focus::after {
+nav li a:hover::after, nav li a:focus::after {
   width: 100%;
 }
 
-/* Cards, headings, tags */
 .card.glass {
-  background: rgba(255, 255, 255, 0.88);
-  box-shadow: 0 7px 32px rgba(87, 111, 183, 0.08), 0 1.5px 8px rgba(52, 73, 94, 0.04);
-  border-radius: 20px;
+  background: rgba(255,255,255,0.94);
+  box-shadow: 0 6px 30px rgba(87,111,183,0.08), 0 2.5px 12px rgba(52,73,94,0.04);
+  border-radius: 18px;
   margin: 2.2rem auto;
-  padding: 2.3rem 2.2rem 1.7rem 2.2rem;
+  padding: 2.2rem 1.7rem 1.5rem 1.7rem;
   max-width: 850px;
-  transition: box-shadow 0.27s;
+  transition: box-shadow 0.25s;
 }
 .card.glass:hover {
-  box-shadow: 0 14px 36px rgba(87, 111, 183, 0.18), 0 4px 20px rgba(87, 111, 183, 0.09);
+  box-shadow: 0 14px 40px rgba(87,111,183,0.15), 0 4px 22px rgba(87,111,183,0.07);
 }
 
 section h2 {
   color: #34495e;
   padding-left: 9px;
-  border-left: 6px solid #ffcc00;
-  margin-bottom: 1.6rem;
-  font-size: 1.42rem;
-  letter-spacing: 0.2px;
+  border-left: 5px solid #ffcc00;
+  margin-bottom: 1.5rem;
+  font-size: 1.36rem;
   font-weight: 700;
 }
 
-.skills-tags {
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.edu-list > div {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #1d3557;
+}
+.degree {
+  font-weight: 700;
+  color: #34495e;
+}
+.school {
+  font-weight: 600;
+  margin-right: 0.3em;
+}
+.badge {
+  background: #ffcc00;
+  color: #34495e;
+  font-weight: 700;
+  padding: 2px 10px;
+  margin: 0 0.18em;
+  border-radius: 7px;
+  font-size: 0.93em;
+  letter-spacing: 0.6px;
+}
+.score {
+  background: #e3eefe;
+  color: #222940;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 7px;
+  font-size: 0.93em;
+  margin-left: 0.4em;
+}
+
+.skill-tags, .skill-tags span {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.85rem;
-  margin: 1.05rem 0 0 0;
+  gap: 0.87rem;
+  margin: 1.07rem 0 0 0;
   padding: 0;
   list-style: none;
 }
-.skills-tags li {
+.skill-tags span {
   background: #e3eefe;
   color: #34495e;
-  padding: 0.44em 1.05em;
-  border-radius: 14px;
-  box-shadow: 0 1px 4px rgba(52, 73, 94, 0.10);
-  font-size: 1em;
-  margin-bottom: 0.15em;
-  transition: background 0.2s, color 0.2s;
+  padding: 0.38em 1.09em;
+  border-radius: 11px;
+  box-shadow: 0 1px 4px rgba(52,73,94,0.10);
+  font-size: .98em;
+  margin-bottom: 0.1em;
+  transition: background 0.21s, color 0.21s;
   cursor: default;
-  font-weight: 500;
+  font-weight: 600;
 }
-.skills-tags li:hover {
-  background: #ffecb3;
-  color: #222940;
+.skill-tags span:hover {
+  background: #ffe066;
+  color: #0d947a;
 }
 
 .project-card {
-  padding: 1.3rem 1.1rem 1.2rem 1.1rem;
   border-radius: 14px;
-  background: linear-gradient(78deg, #e6eeff 65%, #f7fafd 100%);
-  box-shadow: 0 5.5px 18px rgba(52, 73, 94, 0.10);
   margin-bottom: 0.9rem;
-  transition: box-shadow 0.22s, background 0.17s;
-  border-left: 6px solid #3b82f6;
-  border-right: 6px solid #ffcc00;
-}
-.project-card.highlight {
+  box-shadow: 0 5.5px 18px rgba(52,73,94,0.07);
   border-left: 7px solid #10b981;
   border-right: 7px solid #ff9500;
-  background: linear-gradient(70deg, #f9fbe7 70%, #eefcff 100%);
+  background: linear-gradient(70deg,#f9fbe7 70%,#eefcff 100%);
+  padding: 1.2rem;
+  transition: box-shadow 0.18s, background 0.15s;
 }
 .project-card h3 {
-  font-size: 1.18em;
+  font-size: 1.13em;
   font-weight: 700;
 }
-.project-link-btn {
-  margin: 0.3em 0 1em 0;
-}
-.project-link-btn a {
-  display: inline-block;
-  background: #0d947a;
-  color: #fff;
-  font-weight: 700;
-  padding: 0.62em 1.18em;
-  border-radius: 9px;
-  text-decoration: none;
-  box-shadow: 0 2px 7px rgba(44, 62, 80, 0.08);
-  transition: background 0.21s, color 0.14s, transform 0.13s;
-  font-size: 1em;
-  letter-spacing: 0.2px;
-}
-.project-link-btn a:hover {
-  background: #0b735e;
-  color: #ffe066;
-  transform: translateY(-2px) scale(1.04);
-}
-
-.project-points {
-  margin-top: 0;
+.project-details {
+  margin-top: 0.6em;
   margin-bottom: 0;
-  padding-left: 1.15rem;
+  padding-left: 1.1rem;
   color: #1d4831;
 }
-.project-points li {
-  margin-bottom: 0.60rem;
-  font-size: 1.09em;
+.project-details li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05em;
   line-height: 1.55;
   font-family: 'Roboto', Arial, sans-serif;
 }
+.project-links {
+  margin-bottom: 0.6em;
+}
+.project-links .btn {
+  margin-bottom: 0.18em;
+}
 
-strong {
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.cert-block .title {
+  font-weight: 700;
+  color: #0d947a;
+}
+.cert-skills, .cert-skills li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: .97em;
+  color: #222940;
+}
+.cert-skills li {
+  margin-bottom: 2px;
+}
+.instructors {
+  font-size: .94em;
+  color: #5878c6;
+  font-weight: 500;
+}
+
+.lead-block strong {
   color: #34495e;
   font-weight: 700;
+  font-size: 1.09em;
 }
-
-.progress-list > div {
-  margin-bottom: 1.2em;
+.lead-block ul {
+  padding-left: 1.08em;
 }
-.progress-bar {
-  background: #e3eefe;
-  border-radius: 10px;
-  height: 22px;
-  margin-top: 0.3em;
-  box-shadow: 0 1px 5px rgba(52, 73, 94, 0.09);
-  max-width: 80%;
-}
-.progress-bar div {
-  height: 100%;
-  background: linear-gradient(90deg, #ffcc00 75%, #ffe066 100%);
-  border-radius: 10px;
-  font-size: 1em;
-  color: #2c3e50;
-  text-align: right;
-  padding-right: 12px;
-  line-height: 22px;
-  font-weight: 700;
-  box-shadow: 0 1px 3px rgba(52, 73, 94, 0.10);
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* Certificate button */
-.certificate-link {
-  margin-top: 1.05em;
-}
-.certificate-link a {
-  display: inline-block;
-  background: #0d947a;
-  color: #fff;
-  font-weight: 700;
-  padding: 0.62em 1.18em;
-  border-radius: 9px;
-  text-decoration: none;
-  box-shadow: 0 2px 7px rgba(44, 62, 80, 0.06);
-  transition: background 0.21s, color 0.16s, transform 0.13s;
-  font-size: 1em;
-  letter-spacing: 0.2px;
-}
-.certificate-link a:hover {
-  background: #0b735e;
-  color: #ffe066;
-  transform: translateY(-2px) scale(1.04);
+.lead-block li {
+  font-size: 1.06em;
+  margin-bottom: 0.4em;
 }
 
 footer {
   background: #34495e;
   color: #fff;
   text-align: center;
-  padding: 1.2rem 0;
+  padding: 1.18rem 0;
   border-top: 5px solid #ffcc00;
   font-size: 1em;
-  margin-top: 2.2rem;
+  margin-top: 2.1rem;
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
 }
 
 /* Responsive */
 @media (max-width: 900px) {
-  .card {
-    padding: 1.2rem 0.5rem;
-  }
-  .progress-bar {
-    max-width: 95%;
-  }
-  header .header-flex {
-    flex-direction: column;
-    gap: 1rem;
-  }
+  .card { padding: 1.2rem 0.6rem; }
+  header .header-flex { flex-direction: column; gap: 1rem; }
 }
 
 @media (max-width: 600px) {
-  nav ul {
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  h1 {
-    font-size: 1.6rem;
-  }
-  .subtitle {
-    font-size: 1rem;
-  }
-  section h2 {
-    font-size: 1.12rem;
-  }
-  .skills-tags li {
-    font-size: 0.92em;
-  }
-  .card.glass {
-    padding: 1.1rem 0.2rem 1rem 0.2rem;
-  }
-  .project-card {
-    padding: 0.81rem 0.38rem;
-  }
-  .resume-link a,
-  .certificate-link a,
-  .project-link-btn a,
-  .github-profile-link a {
-    font-size: 0.91em;
-  }
+  nav ul { gap: 1rem; flex-wrap: wrap; }
+  h1 { font-size: 1.38rem; }
+  .subtitle { font-size: .95rem; }
+  section h2 { font-size: 1.09rem; }
+  .edu-list > div { font-size: 1em; flex-direction: column; }
+  .skill-tags span { font-size: 0.94em; }
+  .btn, .btn.github, .btn.special { font-size: 0.89em;}
+  .card.glass { padding: 1rem 0.2rem 1rem 0.2rem; }
 }
