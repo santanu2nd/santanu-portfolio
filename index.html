@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
   <title>Santanu Biswas | Portfolio</title>
-  <!-- Montserrat for headings/bold elements, Roboto for body -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Fonts for modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header>
     <div class="container header-flex">
+      <!-- Profile Image -->
       <img src="62kb.jpg" alt="Santanu Biswas" class="profile-img" />
       <div>
         <h1>Santanu Biswas</h1>
-        <p class="subtitle">Enthusiastic MCA Graduate | Software Developer | QA Practitioner</p>
+        <p class="subtitle">MCA Graduate | Software Developer | Manual Testing Enthusiast</p>
         <div class="contact">
-          <a href="mailto:official.santanu.biswas@gmail.com">✉ official.santanu.biswas@gmail.com</a>
-          <a href="tel:+917384687470">☎ +91 7384687470</a>
-          <a href="https://www.linkedin.com/in/santanu7biswas" target="_blank">🔗 LinkedIn</a>
+          <span>☎</span> <a href="tel:+917384687470">+91 7384687470</a>
+          <span>✉</span> <a href="mailto:official.santanu.biswas@gmail.com">official.santanu.biswas@gmail.com</a>
+          <span>🔗</span> <a href="https://www.linkedin.com/in/santanu7biswas" target="_blank">LinkedIn</a>
         </div>
-        <div class="resume-link">
-          <a href="https://drive.google.com/file/d/1OR9QCz516sJJkVdv8-Lv-y_V0T0oKQAK/view?usp=sharing" target="_blank">
-            📄 Download Resume
-          </a>
-        </div>
-        <div class="github-profile-link">
-          <a href="https://github.com/santanu2nd" target="_blank">
-            🔥 My GitHub Profile
-          </a>
+        <div class="btn-row">
+          <a class="btn" href="https://drive.google.com/file/d/1eKXW3rMETnP5jYkHf1KH4bzSi7o1uknl/view?usp=sharing" target="_blank">📄 Download Resume</a>
+          <a class="btn github" href="https://github.com/santanu2nd" target="_blank">🔥 My GitHub</a>
         </div>
       </div>
     </div>
@@ -37,121 +31,124 @@
 
   <nav>
     <ul>
+      <li><a href="#objective">Objective</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#responsibility">Leadership</a></li>
+      <li><a href="#leadership">Leadership</a></li>
     </ul>
   </nav>
 
   <main>
-    <section class="about card glass">
+    <section id="objective" class="card glass">
       <h2>Objective</h2>
       <p>
-        Dynamic and detail-oriented MCA graduate with a passion for building robust software solutions and ensuring exceptional product quality. Adept in Python, database management, and manual testing methodologies, I thrive in collaborative environments where problem-solving and continuous learning are valued. Eager to contribute my skills and drive to a forward-thinking IT team, delivering impactful results with reliability and efficiency.
+        Master’s of Computer Application (2025) graduate with strong skills in software development and testing. Quick learner, team player, and eager to contribute to innovative IT projects while growing in a dynamic environment.
       </p>
     </section>
 
     <section id="education" class="card glass">
       <h2>Education</h2>
-      <div class="progress-list">
+      <div class="edu-list">
         <div>
-          <span>MCA, Techno India University (2025)</span>
-          <div class="progress-bar"><div style="width:74%">7.39 CGPA</div></div>
+          <span class="degree">MCA</span> <span class="school">Techno India University</span>
+          <span class="badge">2025</span> <span class="score">7.39 CGPA</span>
         </div>
         <div>
-          <span>BCA, NSEC (2023)</span>
-          <div class="progress-bar"><div style="width:88%">8.82 CGPA</div></div>
+          <span class="degree">BCA</span> <span class="school">Netaji Subhash Engineering College</span>
+          <span class="badge">2023</span> <span class="score">8.82 CGPA</span>
         </div>
         <div>
-          <span>12th, Nahata High School (2020)</span>
-          <div class="progress-bar"><div style="width:69%">69.2%</div></div>
-        </div>
-        <div>
-          <span>10th, Nahata High School (2018)</span>
-          <div class="progress-bar"><div style="width:51%">50.54%</div></div>
+          <span class="degree">12th</span> <span class="school">Nahata High School</span>
+          <span class="badge">2020</span> <span class="score">69.2%</span>
         </div>
       </div>
     </section>
 
     <section id="skills" class="card glass">
       <h2>Technical Skills</h2>
-      <ul class="skills-tags">
-        <li>Python</li>
-        <li>Oracle SQL (11G)</li>
-        <li>OOPs</li>
-        <li>SDLC (Agile)</li>
-        <li>Manual Testing</li>
-        <li>Networking</li>
-        <li>Problem-Solving</li>
-        <li>Team Collaboration</li>
-        <li>Effective Communication</li>
-        <li>Analytical skill</li>
-      </ul>
+      <div class="skill-tags">
+        <span>Python</span>
+        <span>Oracle SQL (11G)</span>
+        <span>Manual Testing</span>
+        <span>Agile Methodology</span>
+        <span>SDLC/STLC</span>
+        <span>OOPs</span>
+        <span>Networking</span>
+        <span>JiRa</span>
+        <span>GitHub</span>
+        <span>Problem-Solving</span>
+        <span>Team Collaboration</span>
+        <span>Effective Communication</span>
+        <span>Analytical Skill</span>
+      </div>
     </section>
 
     <section id="projects" class="card glass">
       <h2>Projects</h2>
       <div class="project-card highlight">
         <h3>Employee Management System</h3>
-        <div class="project-link-btn">
-          <a href="https://github.com/YOUR_GITHUB_USERNAME/employee-management-system" target="_blank">
-            🔗 View on GitHub
-          </a>
+        <div class="project-links">
+          <a class="btn special" href="https://github.com/santanu2nd/employee-management-tkinter" target="_blank">🔗 GitHub Project</a>
         </div>
-        <ul class="project-points">
-          <li>Developed a Python-based desktop application using <b>Tkinter</b> for managing employee records.</li>
-          <li>Implemented functionalities for adding, updating, viewing, and removing employee data through a user-friendly graphical interface.</li>
-          <li>Integrated <b>Oracle SQL</b> for efficient backend database management and data storage.</li>
-          <li>Applied <b>Agile software development</b> and <b>manual testing</b> principles to ensure reliability and usability.</li>
-          <li>Achieved improved data accuracy and reduced manual effort by streamlining employee data management workflows.</li>
+        <ul class="project-details">
+          <li>Developed a Python desktop application using Tkinter to manage employee records.</li>
+          <li>Features for adding, updating, viewing, and removing employee data via a user-friendly interface.</li>
+          <li>Integrated Oracle SQL for efficient backend management.</li>
+          <li><b>Key Achievement:</b> Improved data accuracy and reduced manual effort by streamlining data workflows.</li>
         </ul>
       </div>
-
       <div class="project-card highlight">
         <h3>Gmail Promotional Mail Unsubscribe and Deleting Bot</h3>
-        <div class="project-link-btn">
-          <a href="https://github.com/santanu2nd/G-Mail-Promotional-Unsubscribe-and-Delete-Python-Bot" target="_blank">
-            🔗 View on GitHub
-          </a>
+        <div class="project-links">
+          <a class="btn special" href="https://github.com/santanu2nd/G-Mail-Promotional-Unsubscribe-and-Delete-Python-Bot" target="_blank">🔗 GitHub Project</a>
         </div>
-        <ul class="project-points">
-          <li>Developed an automation tool in Python that connects to the Gmail API, extracts unsubscribe links from promotional emails, sends automated unsubscribe requests, and deletes those emails in bulk.</li>
-          <li>Implemented robust error handling and API pagination to efficiently process thousands of emails, ensuring a streamlined and clutter-free inbox.</li>
-          <li>Integrated secure OAuth 2.0 authentication, clean code structure, and provided detailed user documentation for safe deployment and easy setup.</li>
-          <li><b>Skills/Domains:</b> Python, Gmail API, OAuth 2.0, RESTful APIs, Automation, Email Processing, Error Handling, Scripting, API Rate Limiting, Technical Documentation</li>
+        <ul class="project-details">
+          <li>Python bot connects to Gmail API, extracts unsubscribe links from promotional emails, sends unsubscribe requests, and deletes those emails in bulk.</li>
+          <li>Robust error handling and API pagination for large-scale inbox cleaning.</li>
+          <li>Secure OAuth 2.0 integration, clean code, and complete user documentation for safe deployment.</li>
+          <li><b>Skills/Domains:</b> Python, Gmail API, OAuth 2.0, RESTful APIs, Automation, Email Processing, Error Handling, API Rate Limiting, Documentation.</li>
         </ul>
       </div>
     </section>
 
     <section id="certifications" class="card glass">
       <h2>Certifications</h2>
-      <div class="certificate-details">
-        <strong>SAP S/4HANA Development</strong> (01-08-2024 to 31-12-2024)<br />
-        Techno India University, West Bengal in collaboration with SAP University Alliances.<br />
-        Instructors: Prof. Rajdeep Ghatak, Prof. Subharanjan Basu
-      </div>
-      <div class="certificate-link">
-        <a href="https://drive.google.com/file/d/1xMCSb-raojk3jtA6D0QZUI5Uwkv6qu7n/view?usp=sharing" target="_blank">
-          🏆 View Certificate
-        </a>
+      <div class="cert-list">
+        <div class="cert-block">
+          <span class="title">Software Testing (QSpiders, Kolkata)</span>
+          <ul class="cert-skills">
+            <li>Usability, User Acceptance, System, Regression, Functional Testing</li>
+            <li>Defect/Bug Life Cycle, Agile Testing, Ad-Hoc, Smoke Testing</li>
+          </ul>
+        </div>
+        <div class="cert-block">
+          <span class="title">SAP S/4HANA Development</span>
+          <span class="badge">Aug-Dec 2024</span>
+          <span>Techno India University & SAP University Alliances</span>
+          <span class="instructors">Prof. Rajdeep Ghatak, Prof. Subharanjan Basu</span>
+          <div class="project-links">
+            <a class="btn special" href="https://drive.google.com/file/d/1xMCSb-raojk3jtA6D0QZUI5Uwkv6qu7n/view?usp=sharing" target="_blank">🏆 View Certificate</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="responsibility" class="card glass">
+    <section id="leadership" class="card glass">
       <h2>Leadership & Responsibility</h2>
-      <strong>Student PR Head, NSEC BCA Dept (2022-23)</strong>
-      <ul>
-        <li>Organized departmental events</li>
-        <li>Fostered team collaboration</li>
-        <li>Increased event participation by 20%</li>
-      </ul>
+      <div class="lead-block">
+        <strong>Student PR Head, NSEC BCA Dept (2022-23)</strong>
+        <ul>
+          <li>Organized departmental events, fostering team collaboration and communication.</li>
+          <li>Boosted event participation by 20% via effective planning and execution.</li>
+        </ul>
+      </div>
     </section>
   </main>
 
   <footer>
-    © 2025 Santanu Biswas | MCA Portfolio
+    &copy; 2025 Santanu Biswas | MCA Portfolio
   </footer>
 </body>
 </html>
